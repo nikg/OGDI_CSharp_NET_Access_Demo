@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c1aebee8-af6b-4ca0-9619-ff795de5e3c5" xmlns="urn:schemas-microsoft-com:xml-dataservicemap">
+  <MetadataSources>
+    <MetadataSource Address="http://CityOfWaterlooOpenData.cloudapp.net:8080/v1/CityOfWaterlooOpenData/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.edmx" MetadataType="Edmx" ID="90dba1ca-d6ae-4322-af9f-0a85072f64ab" SourceId="1" SourceUrl="http://CityOfWaterlooOpenData.cloudapp.net:8080/v1/CityOfWaterlooOpenData/" />
+  </Metadata>
+  <Extensions />
+</ReferenceGroup>

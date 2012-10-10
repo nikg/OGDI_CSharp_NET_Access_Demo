@@ -1,0 +1,157 @@
+﻿<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <edmx:DataServices>
+    <Schema Namespace="OGDI.CityOfWaterlooOpenData" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+      <EntityContainer Name="CityOfWaterlooOpenDataDataService" m:IsDefaultEntityContainer="true">
+        <EntitySet Name="FacilitiesWaterloo20120329" EntityType="OGDI.CityOfWaterlooOpenData.FacilitiesWaterloo20120329Item" />
+        <EntitySet Name="HeritageDesignatedLandmarks20120330" EntityType="OGDI.CityOfWaterlooOpenData.HeritageDesignatedLandmarks20120330Item" />
+        <EntitySet Name="PlacesOfWorshipWaterloo20120329" EntityType="OGDI.CityOfWaterlooOpenData.PlacesOfWorshipWaterloo20120329Item" />
+        <EntitySet Name="StreetNameHistorical" EntityType="OGDI.CityOfWaterlooOpenData.StreetNameHistoricalItem" />
+        <EntitySet Name="addresspointsWaterloo20120914" EntityType="OGDI.CityOfWaterlooOpenData.addresspointsWaterloo20120914Item" />
+        <EntitySet Name="publicArtWaterloo" EntityType="OGDI.CityOfWaterlooOpenData.publicArtWaterlooItem" />
+      </EntityContainer>
+      <EntityType Name="FacilitiesWaterloo20120329Item">
+        <Key>
+          <PropertyRef Name="PartitionKey" />
+          <PropertyRef Name="RowKey" />
+        </Key>
+        <Property Name="PartitionKey" Type="Edm.String" Nullable="false" />
+        <Property Name="RowKey" Type="Edm.String" Nullable="false" />
+        <Property Name="Timestamp" Type="Edm.DateTime" Nullable="false" />
+        <Property Name="entityid" Type="Edm.Guid" Nullable="false" />
+        <Property Name="fid" Type="Edm.String" Nullable="true" />
+        <Property Name="shape" Type="Edm.String" Nullable="true" />
+        <Property Name="id" Type="Edm.String" Nullable="true" />
+        <Property Name="facility" Type="Edm.String" Nullable="true" />
+        <Property Name="unit" Type="Edm.String" Nullable="true" />
+        <Property Name="url" Type="Edm.String" Nullable="true" />
+        <Property Name="address" Type="Edm.String" Nullable="true" />
+        <Property Name="civicno" Type="Edm.String" Nullable="true" />
+        <Property Name="parcelid" Type="Edm.String" Nullable="true" />
+        <Property Name="streetid" Type="Edm.String" Nullable="true" />
+        <Property Name="facnum" Type="Edm.String" Nullable="true" />
+        <Property Name="type" Type="Edm.String" Nullable="true" />
+        <Property Name="latitude" Type="Edm.String" Nullable="true" />
+        <Property Name="longitude" Type="Edm.String" Nullable="true" />
+      </EntityType>
+      <EntityType Name="HeritageDesignatedLandmarks20120330Item">
+        <Key>
+          <PropertyRef Name="PartitionKey" />
+          <PropertyRef Name="RowKey" />
+        </Key>
+        <Property Name="PartitionKey" Type="Edm.String" Nullable="false" />
+        <Property Name="RowKey" Type="Edm.String" Nullable="false" />
+        <Property Name="Timestamp" Type="Edm.DateTime" Nullable="false" />
+        <Property Name="entityid" Type="Edm.Guid" Nullable="false" />
+        <Property Name="heritage_i" Type="Edm.String" Nullable="true" />
+        <Property Name="name" Type="Edm.String" Nullable="true" />
+        <Property Name="address" Type="Edm.String" Nullable="true" />
+        <Property Name="constructi" Type="Edm.String" Nullable="true" />
+        <Property Name="date_type" Type="Edm.String" Nullable="true" />
+        <Property Name="arch_style" Type="Edm.String" Nullable="true" />
+        <Property Name="desig_deta" Type="Edm.String" Nullable="true" />
+        <Property Name="descriptio" Type="Edm.String" Nullable="true" />
+        <Property Name="heritage_s" Type="Edm.String" Nullable="true" />
+        <Property Name="within_dis" Type="Edm.String" Nullable="true" />
+        <Property Name="designated" Type="Edm.String" Nullable="true" />
+        <Property Name="bylaw" Type="Edm.String" Nullable="true" />
+        <Property Name="date_passe" Type="Edm.String" Nullable="true" />
+        <Property Name="legal_note" Type="Edm.String" Nullable="true" />
+        <Property Name="parcelid" Type="Edm.String" Nullable="true" />
+        <Property Name="registry" Type="Edm.String" Nullable="true" />
+        <Property Name="council_rp" Type="Edm.String" Nullable="true" />
+        <Property Name="registry_g" Type="Edm.String" Nullable="true" />
+        <Property Name="create_dat" Type="Edm.String" Nullable="true" />
+        <Property Name="update_dat" Type="Edm.String" Nullable="true" />
+        <Property Name="latitude" Type="Edm.String" Nullable="true" />
+        <Property Name="longitude" Type="Edm.String" Nullable="true" />
+      </EntityType>
+      <EntityType Name="PlacesOfWorshipWaterloo20120329Item">
+        <Key>
+          <PropertyRef Name="PartitionKey" />
+          <PropertyRef Name="RowKey" />
+        </Key>
+        <Property Name="PartitionKey" Type="Edm.String" Nullable="false" />
+        <Property Name="RowKey" Type="Edm.String" Nullable="false" />
+        <Property Name="Timestamp" Type="Edm.DateTime" Nullable="false" />
+        <Property Name="entityid" Type="Edm.Guid" Nullable="false" />
+        <Property Name="fid" Type="Edm.String" Nullable="true" />
+        <Property Name="shape" Type="Edm.String" Nullable="true" />
+        <Property Name="name" Type="Edm.String" Nullable="true" />
+        <Property Name="address" Type="Edm.String" Nullable="true" />
+        <Property Name="facid" Type="Edm.String" Nullable="true" />
+        <Property Name="latitude" Type="Edm.String" Nullable="true" />
+        <Property Name="longitude" Type="Edm.String" Nullable="true" />
+      </EntityType>
+      <EntityType Name="StreetNameHistoricalItem">
+        <Key>
+          <PropertyRef Name="PartitionKey" />
+          <PropertyRef Name="RowKey" />
+        </Key>
+        <Property Name="PartitionKey" Type="Edm.String" Nullable="false" />
+        <Property Name="RowKey" Type="Edm.String" Nullable="false" />
+        <Property Name="Timestamp" Type="Edm.DateTime" Nullable="false" />
+        <Property Name="entityid" Type="Edm.Guid" Nullable="false" />
+        <Property Name="full_name_current" Type="Edm.String" Nullable="true" />
+        <Property Name="historical_name" Type="Edm.String" Nullable="true" />
+        <Property Name="begin_year" Type="Edm.String" Nullable="true" />
+        <Property Name="end_year" Type="Edm.String" Nullable="true" />
+        <Property Name="from_current" Type="Edm.String" Nullable="true" />
+        <Property Name="to_current" Type="Edm.String" Nullable="true" />
+        <Property Name="plan" Type="Edm.String" Nullable="true" />
+        <Property Name="notes" Type="Edm.String" Nullable="true" />
+      </EntityType>
+      <EntityType Name="addresspointsWaterloo20120914Item">
+        <Key>
+          <PropertyRef Name="PartitionKey" />
+          <PropertyRef Name="RowKey" />
+        </Key>
+        <Property Name="PartitionKey" Type="Edm.String" Nullable="false" />
+        <Property Name="RowKey" Type="Edm.String" Nullable="false" />
+        <Property Name="Timestamp" Type="Edm.DateTime" Nullable="false" />
+        <Property Name="entityid" Type="Edm.Guid" Nullable="false" />
+        <Property Name="fid_" Type="Edm.String" Nullable="true" />
+        <Property Name="vail_id" Type="Edm.String" Nullable="true" />
+        <Property Name="civic_addr" Type="Edm.String" Nullable="true" />
+        <Property Name="locnum" Type="Edm.String" Nullable="true" />
+        <Property Name="streetqual" Type="Edm.String" Nullable="true" />
+        <Property Name="street_nm" Type="Edm.String" Nullable="true" />
+        <Property Name="street_uni" Type="Edm.String" Nullable="true" />
+        <Property Name="status" Type="Edm.String" Nullable="true" />
+        <Property Name="x_coord" Type="Edm.String" Nullable="true" />
+        <Property Name="y_coord" Type="Edm.String" Nullable="true" />
+        <Property Name="municnum" Type="Edm.String" Nullable="true" />
+        <Property Name="ward" Type="Edm.String" Nullable="true" />
+        <Property Name="district" Type="Edm.String" Nullable="true" />
+        <Property Name="type" Type="Edm.String" Nullable="true" />
+        <Property Name="latitude" Type="Edm.String" Nullable="true" />
+        <Property Name="longitude" Type="Edm.String" Nullable="true" />
+      </EntityType>
+      <EntityType Name="publicArtWaterlooItem">
+        <Key>
+          <PropertyRef Name="PartitionKey" />
+          <PropertyRef Name="RowKey" />
+        </Key>
+        <Property Name="PartitionKey" Type="Edm.String" Nullable="false" />
+        <Property Name="RowKey" Type="Edm.String" Nullable="false" />
+        <Property Name="Timestamp" Type="Edm.DateTime" Nullable="false" />
+        <Property Name="entityid" Type="Edm.Guid" Nullable="false" />
+        <Property Name="fid" Type="Edm.String" Nullable="true" />
+        <Property Name="shape" Type="Edm.String" Nullable="true" />
+        <Property Name="id" Type="Edm.String" Nullable="true" />
+        <Property Name="index_" Type="Edm.String" Nullable="true" />
+        <Property Name="name" Type="Edm.String" Nullable="true" />
+        <Property Name="title" Type="Edm.String" Nullable="true" />
+        <Property Name="artist_name" Type="Edm.String" Nullable="true" />
+        <Property Name="install_date" Type="Edm.String" Nullable="true" />
+        <Property Name="material" Type="Edm.String" Nullable="true" />
+        <Property Name="location_desc" Type="Edm.String" Nullable="true" />
+        <Property Name="tour_area" Type="Edm.String" Nullable="true" />
+        <Property Name="description" Type="Edm.String" Nullable="true" />
+        <Property Name="owner" Type="Edm.String" Nullable="true" />
+        <Property Name="status" Type="Edm.String" Nullable="true" />
+        <Property Name="latitude" Type="Edm.String" Nullable="true" />
+        <Property Name="longitude" Type="Edm.String" Nullable="true" />
+      </EntityType>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>
